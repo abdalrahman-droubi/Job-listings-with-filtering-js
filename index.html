@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Job Listings</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./images/bg-header-desktop.svg"
+        alt="header img"
+        width="100%"
+        height="100%"
+      />
+
+      <form id="searchForm" class="searchBar">
+        <input
+          type="text"
+          name="search"
+          placeholder="search on role, languages, level, tools about the job"
+          required
+        />
+        <div class="filterBar" id="filterBar"></div>
+      </form>
+    </header>
+    <main class="container" id="container"></main>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

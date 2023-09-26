@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+.noResult {
+  margin: 127px auto;
+  width: 50%;
+  /* height: 100px; */
+  text-align: center;
+  font-size: 30px;
+}
+
+.header {
+  background-color: hsl(180, 29%, 50%);
+  height: 156px;
+}
+
+.searchBar {
+  width: 70%;
+  margin: auto;
+  transform: translateY(-50%);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 8px;
+}
+.searchBar input {
+  height: 75px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 0 25px;
+  font-size: 20px;
+}
+.searchBar input:focus {
+  outline: none;
+}
+.filterBar {
+  display: none;
+  padding: 15px 25px;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-top: 2px solid black;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+  background-color: white;
+}
+
+.filterBar .filterType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  height: 30px;
+  width: 120px;
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  border-radius: 8px;
+}
+.filterBar .filterType .icon {
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  background-color: hsl(180, 29%, 50%);
+  cursor: pointer;
+}
+.filterBar .filterType .icon:hover {
+  background-color: black;
+}
+
+/* ********************* */
+.container {
+  background-color: hsl(180, 52%, 96%);
+  padding: 70px 0;
+  min-height: 100vh;
+}
+
+.job {
+  width: 70%;
+  min-height: 120px;
+  margin: 25px auto;
+  border-radius: 8px;
+  padding: 0 25px;
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.job:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.jobInfo .features {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.jobInfo .features span:first-child {
+  color: hsl(180, 29%, 50%);
+  font-weight: 600;
+}
+.jobInfo .features .featured {
+  background-color: rgba(0, 0, 0, 0.747);
+  color: white;
+  padding: 3px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.jobInfo .features .new {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  padding: 3px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.jobInfo p {
+  margin: 10px 0;
+  font-weight: 700;
+}
+.jobInfo span {
+  color: gray;
+}
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.tag span {
+  background-color: hsl(180, 31%, 95%);
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  color: hsl(180, 29%, 50%);
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 660px) {
+  .searchBar input {
+    font-size: 15px;
+  }
+  .job {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    margin: 35px auto;
+  }
+  .companyInfo {
+    display: block;
+  }
+  .companyLogo {
+    transform: translateY(-70%);
+    width: 30%;
+  }
+}
